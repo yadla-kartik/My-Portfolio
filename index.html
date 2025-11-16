@@ -1,0 +1,54 @@
+<!Doctype>
+<html>
+  <head>
+    <title>why-kartik</title>
+    <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+      .button1 {background-color: #00b3ff; border-radius: 5px;}
+      .button2 {background-color: #ff007b; border-radius: 5px;}
+      </style>
+  </head>
+  <body>
+    <pre><h1>This Website is under development<br> <br><b>visit after 50 days</h1></b><br></pre>
+    <pre><h2>Something Amazing is coming soon..   Till then you can checkout my older Portfolio Pages =></h2> <a href="https://yadla-kartik.github.io/Terminal-Portfolio/"><button class="button button1" id="yesButton">why-kartik Terminal Portfolio</button></a> 
+       <button class="button button2" id="noButton">why-kartik GUI Portfolio</button></a>
+    
+    can't click GUI portfolio ?? 😂️😂️
+    Hint: you can navigate to Terminal portfolio 
+    </pre>
+<img src="/asset/busy.gif" />
+    
+    <pre><h2>have a nice day😊</h2></pre>
+    
+  </body>
+</html>
+
+<script>
+const yesButton = document.querySelector('#yesButton');
+const noButton = document.querySelector('#noButton');
+
+const moveNoButton = () => {
+  var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+  var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+
+  noButton.style.position = 'absolute';
+  noButton.style.left = `${x}px`;
+  noButton.style.top = `${y}px`;
+}
+
+yesButton.addEventListener('click', () => {
+  window.location.assign('yes.html');
+})
+
+noButton.addEventListener('click', moveNoButton);
+noButton.addEventListener('mouseenter', moveNoButton);
+</script>
